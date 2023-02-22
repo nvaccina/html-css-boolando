@@ -17,6 +17,20 @@ a{
   min-width: 1080px;
   margin: 0 auto;
 }
+.t-12{
+  font-size: 12px;
+}
+.p-2{
+  padding-bottom: 2px;
+}
+/*.flex-container{
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
 
 /*HEADER*/
 header{
@@ -52,4 +66,59 @@ header .container{
 }
 .t-white i{
   padding: 0 10px;
+}
+/*MAIN*/
+/*main{
+  margin-top: 80px;
+}*/
+.card{
+  position: relative;
+	width: 400px;
+  height: 630px;
+  margin-top: 40px;
+	cursor: pointer;
+}
+.image img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.image img:last-child{
+  display: none;
+}
+.image:hover img:last-child{
+  display: block;
+}
+.text{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.scontato{
+  color: #FF0000;
+}
+.prezzo-pieno{
+  text-decoration: line-through;
+}
+.heart{
+  position: absolute;
+  top: 10px;
+  right: 0;
+  padding: 10px 15px;
+  font-size: 25px;
+  background-color: white;
+}
+.heart:hover{
+  color: #FF0000;
+}
+.sconto-50{
+  position: absolute
+  padding: 10px;
+  background-color: #FF0000;
+}
+.sostenibile{
+  position: absolute
+  padding: 10px;
+  color: #008000;
 }
