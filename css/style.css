@@ -10,7 +10,7 @@ a{
   text-decoration: none;
 }
 .clearfix::after{
-  content: "";
+  content: '';
   display: table;
   clear: both;
 }
@@ -18,7 +18,7 @@ a{
   color: #FFFFFF;
 }
 .container{
-  width: 80%;
+  width: 70%;
   min-width: 1080px;
   margin: 0 auto;
 }
@@ -74,31 +74,34 @@ main{
 main .container{
   margin-top: 50px;
   display: flex;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  padding-bottom: 50px;  
 }
+
 .card{
   position: relative;
-	width: calc(100% / 3 - 20px);
-  min-width: 300px;
-  height: 610px;
-  margin: 40px 10px;
+  Width: calc(100% / 3 - 20px);
+  margin: 50px 10px;
 	cursor: pointer;
 }
 .image img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.image img:first-child{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
-.image img:last-child{
-  display: none;
-}
 .image:hover img:last-child{
-  display: block;
+  display: none;
 }
 .text{
   position: absolute;
-  bottom: 0;
+  top: 100%;
   left: 0;
 }
 .scontato{
@@ -122,7 +125,7 @@ main .container{
 .trg{
   display:flex;
   position: absolute;  
-  bottom: 80px;
+  bottom: 40px;
   left: 0; 
 }
 .target{
