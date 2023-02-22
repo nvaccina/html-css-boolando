@@ -65,17 +65,23 @@ header .container{
   list-style: none;  
 }
 .t-white i{
-  padding: 0 10px;
+  padding: 0 5px;
 }
 /*MAIN*/
 /*main{
   margin-top: 80px;
 }*/
+main .container{
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;  
+}
 .card{
   position: relative;
-	width: 400px;
-  height: 630px;
-  margin-top: 40px;
+	width: calc(100% / 3 - 20px);
+  max-width: 400px;
+  height: 610px;
+  margin: 40px 10px;
 	cursor: pointer;
 }
 .image img{
@@ -96,6 +102,7 @@ header .container{
   left: 0;
 }
 .scontato{
+  font-weight: bold; 
   color: #FF0000;
 }
 .prezzo-pieno{
@@ -112,13 +119,43 @@ header .container{
 .heart:hover{
   color: #FF0000;
 }
-.sconto-50{
-  position: absolute
-  padding: 10px;
+.tar{
+  
+}
+.target{
+  display: inline-block;
+  position: absolute;  
+  bottom: 70px;
+  left: 0; 
+  padding: 5px 10px;
+  font-weight: bold;  
+}
+.sconto{
+
   background-color: #FF0000;
 }
 .sostenibile{
-  position: absolute
-  padding: 10px;
-  color: #008000;
+  background-color: #008000;
+}
+/*FOOTER*/
+footer{
+  background-color: #1A1A1A;
+  color: white;
+
+}
+footer .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.azienda h5{
+  padding-bottom: 7px;
+}
+.social{
+  text-align: center;
+}
+.social p{
+  font-weight: bold;
+  padding-bottom: 7px;
 }
